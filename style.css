@@ -127,6 +127,33 @@ main {
     background-color: #2596be;
 }
 
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-size: 0.9rem;
+    color: #444;
+    opacity: 0.7;
+    position: relative;
+    margin-top: 30px;
+  }
+  
+  .footer span {
+    font-weight: 600;
+    font-style: italic;
+    color: #075e54;
+  }
+
+  html, body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #frame-container {
+    flex: 1;
+  }
+  
 
 
 @media (max-width: 600px) {
