@@ -3,6 +3,8 @@
 <br>![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg) <br><br>
 <p align="center">Qanta messagerie PWA - Progressive Web App<p></p>
 
+⚠️ Ce projet est actuellement en cours de développement. Certaines fonctionnalités ou visuels peuvent évoluer. N'hésitez pas à consulter le [repository GitHub](...) pour suivre les mises à jour !
+
 
 **Qanta** est une application de messagerie de type WhatsApp, développée en HTML/CSS/JavaScript avec une architecture **PWA** (Progressive Web App). Elle permet d’envoyer des messages, de les stocker localement et d’être installée comme une vraie app mobile ou desktop.
 
