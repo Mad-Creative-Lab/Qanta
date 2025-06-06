@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qanta - Home</title>
+    <link rel="apple-touch-icon" href="./img/qantaLogo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/appicon.png">
+    <link rel="apple-touch-icon" href="/img/qanta-180.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="home-wrapper fade-in">
+        <img src="./img/appicon.png" alt="Qanta Logo" class="hero-logo" width="200" />
+        <h1 class="intro-text">Bienvenue sur Qanta</h1>
+        <p class="subtitle">Votre messagerie PWA simple et rapide</p>
+        <div class="home-actions">
+            <a href="auth.html" class="btn">Authentification</a>
+            <a href="index.html" class="btn secondary">Accéder au Chat</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Crafted by <strong>Mad Cre@tive Lab</strong></p>
+    </footer>
+
+    <script>
+        const text = document.querySelector('.intro-text');
+        let index = 0;
+        const original = text.textContent;
+        text.textContent = '';
+        function type() {
+            if (index < original.length) {
+                text.textContent += original.charAt(index);
+                index++;
+                setTimeout(type, 100);
+            }
+        }
+        window.onload = type;
+    </script>
+</body>
+</html>

@@ -1,7 +1,7 @@
  {
     "name": "Qanta",
     "short_name": "Qanta",
-    "start_url": "/",
+    "start_url": "/home.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#075e54",

@@ -8,15 +8,16 @@
 const CACHE_NAME = 'whatsapp-clone-cache-v1';
 const urlsToCache = [
     '/',
+    '/home.html',
     '/index.html',
+    '/auth.html',
     '/style.css',
     '/app.js',
-    '/appicon.png',
     '/appicon.png',
     '/img/qanta-192.png',
     '/img/qanta-512.png',
     '/manifest.json'
-    
+
 ];
 
 self.addEventListener('install', (event) => {
