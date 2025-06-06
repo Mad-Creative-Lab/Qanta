@@ -191,3 +191,72 @@ main {
 
 
 
+
+/* Home and Authentication Styling */
+.home-wrapper, .auth-wrapper {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.hero-logo {
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    margin-top: 5px;
+    color: #075e54;
+}
+
+.home-actions {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #34b5f1;
+    border-radius: 5px;
+}
+
+.btn.secondary {
+    background-color: #b9a3f7;
+    color: #000;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.auth-wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.auth-wrapper input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+
