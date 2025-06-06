@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="auth-form">
+        <input type="email" id="email" placeholder="Adresse email" required>
+        <span id="error" style="color:red; display:none;">Email non valide, veuillez réessayer.</span>
+        <button type="submit">Valider</button>
+    </form>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const emailField = document.getElementById('email');
+        const errorSpan = document.getElementById('error');
+
+        document.getElementById('auth-form').addEventListener('submit', function (e) {
+            if (!emailField.value || !/^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$/.test(emailField.value)) {
+                e.preventDefault();
+                errorSpan.style.display = 'inline';
+            } else {
+                errorSpan.style.display = 'none';
+            }
+        });
+    });
+    </script>
+</body>
+</html>
